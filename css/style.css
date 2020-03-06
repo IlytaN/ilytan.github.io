@@ -1,0 +1,104 @@
+html{
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 6.0vh;
+}
+h2 {
+  font-size: 5.0vh;
+}
+h3 {
+  font-size: 3.8vh;
+}
+p {
+  font-size: 3vh;
+}
+.teal-section {
+  text-align: center;
+  margin: auto;
+  background-color: #ff8385;
+  color: white;
+  min-height: 100vh;
+  padding: 10vh 5vw;
+}
+.white-section{
+  text-align: center;
+  margin: auto;
+  color: #102a3e;
+  padding: 4em;
+  min-height: 100vh;
+}
+/* Navigation */
+nav{
+  color: white;
+  background-color: #102a3e;
+}
+
+/* Footer */
+footer{
+  height: 8em;
+  color: white;
+  background-color: #102a3e;
+  text-align: center;
+}
+
+/* Header */
+.intro{
+  padding: 10vh 0;
+}
+.avatar-wrapper{
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+.avatar{
+  display: inline;
+  margin-left: -70px;
+  height: 100%;
+  width: auto;
+}
+.max-heading{
+  text-transform: uppercase;
+  padding: 4vh 0;
+}
+
+/* Projects */
+.projects {
+
+}
+.widgets{
+  padding: 2vh 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.widget{
+  border-radius: 10%;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+}
+
+/* About */
+.about{
+
+}
+
+@media screen and (max-width: 480px) {
+  .widgets{
+    flex-direction: column;
+  }
+  .widget{
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body{
+
+  }
+}

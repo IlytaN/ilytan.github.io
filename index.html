@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huong's website</title>
+    <link rel="icon" href="./img/log.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <img src="./img/logo.png" alt="" height="100px">
+        <a class="navbar-brand" href="#intro">MIDNIGHT SCENT</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive"  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="teal-section" id="intro">
+      <div class="intro py-2">
+        <div class="avatar-wrapper">
+          <img src="./img/ava.jpg" alt="" class="avatar">
+        </div>
+        <div class="">
+          <h1 class="max-heading">This is Huong</h1>
+          <h3 class="">Web developer - Thinker - Inspirer</h3>
+        </div>
+      </div>
+    </header>
+
+    <section class="projects white-section" id="projects">
+      <h2>Projects</h2>
+      <div class="widgets">
+          <img src="./img/proj1.png" alt="" class="widget">
+          <img src="./img/proj1.png" alt="" class="widget">
+          <img src="./img/proj1.png" alt="" class="widget">
+          <img src="./img/proj1.png" alt="" class="widget">
+          <img src="./img/proj1.png" alt="" class="widget">
+          <img src="./img/proj1.png" alt="" class="widget">
+      </div>
+    </section>
+
+    <section class="about teal-section" id="about">
+      <h2>About</h2>
+      <h3>Huong is a DEV</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section class="contact white-section" id="contact">
+      <h2>Contact</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <footer>
+      <p class="pt-5">Copyright &copy; MidnightScent 2020</p>
+    </footer>
+
+    <!-- Custom scripts -->
+    <script src="js/index.js"></script>
+
+    <!-- bootstrap 4 and jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    // Only show menu when scroll up
+    $(document).ready(function(){
+      var position = $(window).scrollTop();
+      $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+              if (scroll > position) {
+                  $('#mainNav').fadeOut(500);
+              } else {
+                  $('#mainNav').fadeIn(500);
+              }
+              position = scroll;
+          });
+        });
+
+      // Update navbar on scroll
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 80
+      });
+    </script>
+  </body>
+</html>
