@@ -1,6 +1,10 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  text-align: center;
+  margin: auto;
+}
 h1 {
   font-size: 6.0vh;
 }
@@ -14,20 +18,25 @@ p {
   font-size: 3vh;
 }
 .teal-section {
-  text-align: center;
-  margin: auto;
   background-color: #ff8385;
   color: white;
   min-height: 100vh;
-  padding: 10vh 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .white-section{
-  text-align: center;
-  margin: auto;
   color: #102a3e;
-  padding: 4em;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.page-heading{
+  line-height: 2.5em;
+}
+
 /* Navigation */
 nav{
   color: white;
@@ -44,7 +53,8 @@ footer{
 
 /* Header */
 .intro{
-  padding: 10vh 0;
+  padding-top: 25vh;
+  padding-bottom: 20vh;
 }
 .avatar-wrapper{
   width: 20em;
@@ -66,24 +76,27 @@ footer{
 
 /* Projects */
 .projects {
-
+  padding: 5em 10vw;
 }
 .widgets{
-  padding: 2vh 2vw;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
 }
 .widget{
   border-radius: 10%;
   overflow: hidden;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
 /* About */
 .about{
+  padding: 0 25vw;
+}
+
+/* Contact */
+.contact{
 
 }
 
@@ -95,10 +108,10 @@ footer{
     width: 80vw;
     height: auto;
   }
-}
-
-@media screen and (max-width: 300px) {
-  body{
-
+  .projects{
+    padding: 4em 10vw;
+  }
+  .about{
+    padding: 4em 10vw;
   }
 }
