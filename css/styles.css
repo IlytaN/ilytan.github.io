@@ -139,7 +139,7 @@ footer {
   transition: 1s ease; }
 
 /* Modal */
-.dark-blue {
+.modal-content {
   color: #102a3e !important; }
 
 .close-icon {
