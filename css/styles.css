@@ -5,16 +5,22 @@ html, body {
   overflow-x: hidden; }
 
 h1 {
-  font-size: 6.0vh; }
+  font-size: 2.5rem; }
 
 h2 {
-  font-size: 5.0vh; }
+  font-size: 2.2rem; }
 
 h3 {
-  font-size: 3.8vh; }
+  font-size: 1.9rem; }
+
+h4 {
+  font-size: 1.7rem; }
+
+h5 {
+  font-size: 1.5rem; }
 
 p, li {
-  font-size: 3vh; }
+  font-size: 1.3rem; }
 
 .carrot-section, .white-section, .mint-section, .pink-section {
   color: white;
@@ -93,7 +99,7 @@ footer {
   height: 100%;
   width: auto; }
 
-.max-heading {
+.primary-heading {
   text-transform: uppercase;
   padding: 4vh 0; }
 
@@ -256,6 +262,12 @@ footer {
 /* Media queries */
 /* Mobile phones */
 @media screen and (max-width: 480px) {
+  .primary-heading {
+    padding: 2vh 0; }
+
+  .second-heading {
+    padding: 0 10px; }
+
   .widgets {
     flex-direction: column; }
 
@@ -272,6 +284,9 @@ footer {
   .about {
     padding: 20vh 10vw; }
 
+  .contact {
+    padding: 5px; }
+
   #logo {
     display: none; }
 
@@ -286,21 +301,6 @@ footer {
     padding: 60px 50px; } }
 /* iPads */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  h1 {
-    font-size: 4.5vh; }
-
-  h2 {
-    font-size: 3vh; }
-
-  h3 {
-    font-size: 2.2vh; }
-
-  h4 {
-    font-size: 2vh; }
-
-  p, li {
-    font-size: 1.7vh; }
-
   #logo {
     display: none; }
 
