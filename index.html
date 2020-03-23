@@ -4,27 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huong's website</title>
     <link rel="icon" href="./img/log.png">
-    <!-- hamburger button -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css" crossorigin="anonymous">
     <!-- Bootstrap -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/d81745741b.js" crossorigin="anonymous"></script>
-    <!-- Animation on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Animation on scroll by AOS -->
+    <link href="./css/aos.css" rel="stylesheet">
+    <script src="./js/aos.js"></script>
     <!-- Custom -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body class="">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <img src="./img/logo.png" alt="" height="100px">
+        <img id="logo" src="./img/logo.png" alt="" height="100px">
         <a class="navbar-brand" href="#intro">MIDNIGHT SCENT</a>
         <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive"  aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars fa-2x"></i>
+          <img class="nav-icon" src="./img/bars-solid.svg" alt="">
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
@@ -35,118 +31,156 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <header class="pink-section" id="intro">
-      <div class="intro">
-        <div class="avatar-wrapper">
-          <img src="./img/ava.jpg" alt="" class="avatar">
+    <div id="content" data-target="#navbarResponsive">
+      <header class="carrot-section text-center" id="intro">
+        <div class="intro">
+          <div class="avatar-wrapper">
+            <img src="./img/ava.jpg" alt="" class="avatar">
+          </div>
+          <div class="" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+            <h1 class="max-heading">Hi, I'm Huong</h1>
+            <h3 class="">Web developer - Thinker - Inspirer</h3>
+          </div>
         </div>
-        <div class="" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
-          <h1 class="max-heading">Hi, I'm Huong</h1>
-          <h3 class="">Web developer - Thinker - Inspirer</h3>
+      </header>
+
+      <section class="white-section text-center" id="projects">
+        <div class="projects">
+          <h2 class="page-heading">My works <img src="./img/project.png" alt="" /></h2>
+          <p>Here are a few projects I completed. Want to see more? <strong><a href="mailto:nguyenquynhhuong2305@gmail.com" class="blue-link">Email me.</a></strong></p>
+          <div class="widgets">
+              <div class="widget" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1500">
+                <div class="hovereffect">
+                  <img src="./img/camera1.jpg" alt="" id="insta">
+                  <div class="overlay">
+                    <h3>Instagram</h3>
+                    <p>
+                    <a href="" data-toggle="modal" data-target="#instaModal">LEARN MORE</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="widget" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1500">
+                <div class="hovereffect">
+                  <img src="./img/puppy2.jpg" alt="" id="pet">
+                  <div class="overlay">
+                    <h3>Pet Care System</h3>
+                    <p>
+                    <a href="" data-toggle="modal" data-target="#petModal">LEARN MORE</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="widget" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1500">
+                <div class="hovereffect">
+                  <img src="./img/drugs2.jpg" alt="" id="medic">
+                  <div class="overlay">
+                    <h3>Medicool</h3>
+                    <p>
+                    <a href="" data-toggle="modal" data-target="#medicModal">LEARN MORE</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="widget" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1500">
+                <div class="hovereffect">
+                  <img src="./img/clinic3.jpg" alt="" id="clinic">
+                  <div class="overlay">
+                    <h2>Surgery clinic</h2>
+                    <p>
+                    <a href="" data-toggle="modal" data-target="#clinicModal">LEARN MORE</a>
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+          </div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <section class="white-section" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500" id="projects">
-      <div class="projects">
-        <h2 class="page-heading">My works</h2>
-        <p>Here are a few projects I completed. Want to see more? <strong><a href="mailto:nguyenquynhhuong2305@gmail.com">Email me.</a></strong></p>
-        <div class="widgets">
-            <div class="widget">
-              <div class="hovereffect">
-                <img src="./img/camera1.jpg" alt="" id="insta">
-                <div class="overlay">
-                  <h2>Instagram</h2>
-                  <p>
-                  <a href="" data-toggle="modal" data-target="#instaModal">LEARN MORE</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="widget" >
-              <div class="hovereffect">
-                <img src="./img/puppy2.jpg" alt="" id="pet">
-                <div class="overlay">
-                  <h2>Pet Care System</h2>
-                  <p>
-                  <a href="" data-toggle="modal" data-target="#petModal">LEARN MORE</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="widget" >
-              <div class="hovereffect">
-                <img src="./img/drugs2.jpg" alt="" id="medic">
-                <div class="overlay">
-                  <h2>Medicool</h2>
-                  <p>
-                  <a href="" data-toggle="modal" data-target="#medicModal">LEARN MORE</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="widget" >
-              <div class="hovereffect">
-                <img src="./img/clinic3.jpg" alt="" id="clinic">
-                <div class="overlay">
-                  <h2>Surgery clinic</h2>
-                  <p>
-                  <a href="" data-toggle="modal" data-target="#clinicModal">LEARN MORE</a>
-                  </p>
-                </div>
-              </div>
-            </div>
+      <section class="pink-section text-center" id="about">
+        <div class="about" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+          <h2 class="page-heading">About me<img src="./img/it-girl.png" alt="" /></h2>
+          <p>I've worked on several web projects with different roles: frontend developer, backend developer, tester and so on.</p>
+          <p>My goal is to become a proficient web developer who can create true values for life</p>
+          <p>Since starting to pursue web development career, I’ve always been a responsible and positive person who enjoys learning. I believe that a passion for learning and growing, together with a positive point of view is always the best material for building great things in life.</p>
+          <div class="skills">
+            <h4>My skills <img src="./img/code-pink.png" alt="" /></h4>
+            <p>Frontend: HTML, Slim, CSS, SCSS, Bootstrap, JavaScript, jQuery, ReactJS, AngularJS, Ionic</p>
+            <p>Backend: Ruby on Rails, PHP, CodeIgniter, NodeJS, Minitest</p>
+            <p>Other: Git</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="pink-section" id="about">
-      <div class="about" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
-        <h2 class="page-heading">About me...</h2>
-        <p>I've worked on several web projects with different roles: frontend developer, backend developer, tester and so on.</p>
-        <p>My goal is to become a proficient web developer who can create true values for life</p>
-        <p>Since starting to pursue web development career, I’ve always been a responsible and positive person who enjoys learning. I believe that a passion for learning and growing, together with a positive point of view is always the best material for building great things in life.</p>
-      </div>
-    </section>
+      <section class="white-section" id="experience">
+        <div class="experience" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+          <h2 class="page-heading text-center">Work experience</h2>
+          <h3><img src="./img/exp.png"/> Mailbutler GmbH</h3>
+          <h4>Tech stack</h4>
+          <p>Ruby on Rails, Slim, JavaScript(ES6), jQuery, Bootstrap, CSS, SCSS, Minitest, AWS S3</p>
+          <h4>Tasks</h4>
+          <ul>
+            <li>Implement new and convenient tools for the Mailbutler team</li>
+            <li>Write automated tests for the new features</li>
+            <li>Maintain and extend existing user tools and pages in the internal dashboard</li>
+            <li>Build new features and functions to enhance sales and user interaction</li>
+            <li>Maintain and optimize Mailbutler website using Wordpress</li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="white-section" id="contact">
-      <div class="contact" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
-        <h2 class="page-heading">Get in touch</h2>
-        <p></p>
-        <p>
-            <i class="far fa-envelope fa-lg"></i>
-            <strong class="">nguyenquynhhuong&#64;gmail.com</strong>
-        </p>
-        <p>
-          <i class="fab fa-linkedin fa-lg"></i>
-          <strong>https://www.linkedin.com/in/huong-nguyen-820027123/</strong>
-        </p>
-        <p>
-          <i class="fab fa-github-square fa-lg"></i>
-          <strong>https://github.com/IlytaN</strong>
-        </p>
-      </div>
-    </section>
+      <section class="mint-section text-center" id="contact">
+        <div class="contact" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
+          <h2 class="page-heading">Get in touch</h2>
+          <div class="">
+            <p>
+                <!-- <i class="far fa-envelope fa-lg"></i> -->
+                <img src="./img/gmail.png" alt="">
+                <strong class="">
+                  <a href="mailto:nguyenquynhhuong2305@gmail.com" class="white-link">
+                    nguyenquynhhuong&#64;gmail.com
+                  </a>
+                </strong>
+            </p>
+            <p>
+              <!-- <i class="fab fa-linkedin fa-lg"></i> -->
+              <img src="./img/linkedin.png" alt="">
+              <strong>
+                <a href="https://www.linkedin.com/in/huong-nguyen-oamk/" class="white-link">linkedin.com/in/huong-nguyen-oamk</a>
+              </strong>
+            </p>
+            <p>
+              <!-- <i class="fab fa-github-square fa-lg"></i> -->
+              <img src="./img/github.png" alt="">
+              <strong>
+                <a href="https://github.com/huongmonica" class="white-link">github.com/huongmonica</a></strong>
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <footer>
-      <p class="pt-5">Copyright &copy; MidnightScent 2020</p>
-    </footer>
-
+      <footer>
+        <p class="pt-5">Copyright &copy; MidnightScent 2020</p>
+      </footer>
+    </div>
 
     <!-- Instagram Modal -->
-    <div class="modal fade" id="instaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="instaModal" tabindex="-1" role="dialog" aria-labelledby="instagramModal" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title dark-blue" id="exampleModalLabel">Instagram</h3>
+            <h3 class="modal-title dark-blue" id="instagramModal">Instagram</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <i class="fas fa-times fa-lg"></i>
+              <img class="close-icon" src="./img/times.svg" alt="">
             </button>
           </div>
           <div class="modal-body">
@@ -166,11 +200,11 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-close" data-dismiss="modal">
-              <a href="https://github.com/IlytaN/Instagram_server_phase2">See server codes</a>
+            <button type="button" class="btn btn-git" data-dismiss="modal">
+              <a href="https://github.com/huongmonica/Instagram_server_phase2">See server codes</a>
             </button>
-            <button type="button" class="btn btn-close" data-dismiss="modal">
-              <a href="https://github.com/IlytaN/Instagram_client_phase2.git">See client codes</a>
+            <button type="button" class="btn btn-git" data-dismiss="modal">
+              <a href="https://github.com/huongmonica/Instagram_client_phase2.git">See client codes</a>
             </button>
           </div>
         </div>
@@ -178,13 +212,13 @@
     </div>
 
     <!-- Pet Modal -->
-    <div class="modal fade" id="petModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="petModal" tabindex="-1" role="dialog" aria-labelledby="petModal" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title dark-blue" id="exampleModalLabel">Pet Care System</h3>
+            <h3 class="modal-title dark-blue" id="petModal">Pet Care System</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <i class="fas fa-times fa-lg"></i>
+              <img class="close-icon" src="./img/times.svg" alt="">
             </button>
           </div>
           <div class="modal-body">
@@ -197,11 +231,6 @@
               <h5>The Product</h5>
               <img class="modal-img" src="img/pi-servo.jpg" width="400" height="300" alt="">
               <p>A pet feeding machine and a web application were developed. The pet feeding machine included a food dispenser, a servo and Raspberry Pi. Pet’s food could be released from the food dispenser as a result of Raspberry Pi triggering the servo to rotate the dispenser’s spinner. NodeJS and Pigpio – a C library - were applied to receive the requests from the web app and manipulate the servo.</p>
-              <!-- <video class="modal-img" width="400" controls>
-                <source src="img/pet.mp4" type="video/mp4">
-                <source src="img/pet.ogg" type="video/ogg">
-              Your browser does not support the video tag.
-              </video> -->
               <p>Although the web application's UI was simple, it was a mobile-friendly progressive web app with all the core features such as <i>Feed now</i> and <i>Schedule next feed</i> included. ReactJS was used to make this application.</p>
             </div>
             <div class="">
@@ -209,10 +238,12 @@
               <p>Raspberry Pi, ReactJS, React-bootstrap, NodeJS, Node-schedule, HTML, CSS</p>
             </div>
           </div>
-          </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-close" data-dismiss="modal">
-              <a href="#">See codes</a>
+            <button type="button" class="btn btn-git" data-dismiss="modal">
+              <a href="https://github.com/huongmonica/pet_feeding_server">See server codes</a>
+            </button>
+            <button type="button" class="btn btn-git" data-dismiss="modal">
+              <a href="https://github.com/huongmonica/pet_feeding_client">See client codes</a>
             </button>
           </div>
         </div>
@@ -220,43 +251,41 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="medicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="medicModal" tabindex="-1" role="dialog" aria-labelledby="medicModal" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title dark-blue" id="exampleModalLabel">Medicool</h3>
+            <h3 class="modal-title dark-blue" id="medicModal">Medicool</h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <i class="fas fa-times fa-lg"></i>
+              <img class="close-icon" src="./img/times.svg" alt="">
             </button>
           </div>
           <div class="modal-body">
-
+            <div class="">
+              <h5>The Scenario</h5>
+              <p>Nowadays in Russia there is no useful application for searching medicines through the pharmacies. The customer needs to call the info desk and wait for about 5-7 minutes until the operator answers to get his medicine.</p>
+              <p>To solve such problems, this project was planned to include a website acting as an admin panel for pharmacy employees to manage medicine information, a mobile application for end-users to search medicines and pharmacies, a server and a shared database.</p>
+            </div>
+            <div class="">
+              <h5>The Product</h5>
+              <p>A 4-member team including me worked on this project from planning and designing phase to development and testing phase.</p>
+              <p>As a result, a website was made for the pharmacy employees to manage medicine information such as names, dosage, availability etc. and pharmacy information. All CRUD actions were available in this PHP web application. A database was also created with MySQLWorkbench and it worked perfectly with both this admin panel and the mobile application.</p>
+              <img src="img/medic1.png" alt="">
+              <p>A mobile application was built using Ionic, AngularJS. Users could search medicine by name and location. They could also check the addresses of the nearby pharmacies which have the medicines they needed. This feature was developed using cordova map plugin and google map api.</p>
+              <img src="img/medic2.png" alt="">
+              <p>A NodeJS server was created. It could work with the mobile application and the shared database.</p>
+            </div>
+            <div class="">
+              <h5>Technologies</h5>
+              <p>HTML, CSS, JavaScript, AngularJS, Ionic, jQuery, Bootstrap, NodeJS, MySQL, PHP, MySQLWorkbench</p>
+            </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-close" data-dismiss="modal">
-              <a href="#">See codes</a>
+            <button type="button" class="btn btn-git" data-dismiss="modal">
+              <a href="https://github.com/huongmonica/medicool_mobile_server">See server codes</a>
             </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="clinicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title dark-blue" id="exampleModalLabel">Surgery Clinic</h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <i class="fas fa-times fa-lg"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-close" data-dismiss="modal">
-              <a href="#">See codes</a>
+            <button type="button" class="btn btn-git" data-dismiss="modal">
+              <a href="https://github.com/huongmonica/medicool_ionic_app">See client codes</a>
             </button>
           </div>
         </div>
@@ -284,6 +313,12 @@
                 position = scroll;
             });
           });
+
+      // Redirect the page to Github
+      $('.btn-git').click(function () {
+        link = $(this).children('a').attr("href")
+        window.open(link, '_blank');
+      });
 
       // Update navbar on scroll
       $('body').scrollspy({
