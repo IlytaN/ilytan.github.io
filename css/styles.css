@@ -83,8 +83,7 @@ footer {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw)); }
 
 .intro {
-  padding-top: 25vh;
-  padding-bottom: 20vh; }
+  padding: 25vh 15vw; }
 
 .avatar-wrapper {
   width: 15em;
@@ -265,8 +264,8 @@ footer {
   .primary-heading {
     padding: 2vh 0; }
 
-  .second-heading {
-    padding: 0 10px; }
+  .intro {
+    padding: 0 20px; }
 
   .widgets {
     flex-direction: column; }
