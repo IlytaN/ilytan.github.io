@@ -43,7 +43,8 @@ p, li {
 .pink-section {
   color: #102a3e;
   background-color: #ffd0de;
-  min-height: 150vh; }
+  min-height: 150vh;
+  text-align: center; }
 
 .mint-section {
   background-color: #9fcabf;
@@ -271,7 +272,7 @@ footer {
     padding: 2vh 0; }
 
   .intro {
-    padding: 0 20px; }
+    padding: 120px 20px 50px 20px; }
 
   .widgets {
     flex-direction: column; }
@@ -290,10 +291,7 @@ footer {
     padding: 20vh 10vw; }
 
   .contact {
-    padding: 5px; }
-
-  #logo {
-    display: none; }
+    padding: 20px; }
 
   .modal-footer {
     display: flex;
@@ -310,17 +308,11 @@ footer {
     height: 200px; } }
 /* iPads */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #logo {
-    display: none; }
-
   .carrot-section, .white-section {
     min-height: auto; }
 
   .pink-section, .mint-section {
     min-height: 100vh; }
-
-  .mint-section {
-    min-height: 70vh; }
 
   .intro {
     padding-top: 15vh; }
