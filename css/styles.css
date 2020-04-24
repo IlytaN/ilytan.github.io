@@ -291,7 +291,8 @@ footer {
     padding: 20vh 10vw; }
 
   .contact {
-    padding: 20px; }
+    padding: 20px;
+    word-break: break-word; }
 
   .modal-footer {
     display: flex;
